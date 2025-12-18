@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Política de Privacidade - VigiaSoft Mobile</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; color: #222; }
+      .wrap { max-width: 900px; margin: 0 auto; padding: 24px; }
+      .card { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,.06); }
+      h1 { margin: 0 0 12px; font-size: 24px; }
+      h2 { margin-top: 20px; font-size: 18px; }
+      p, li { line-height: 1.5; }
+      code { background: #f0f0f0; padding: 2px 6px; border-radius: 6px; }
+      .muted { color: #666; font-size: 13px; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="card">
+        <h1>Política de Privacidade — VigiaSoft Mobile</h1>
+        <p class="muted">Última atualização: <span id="date"></span></p>
+
+        <p>
+          Esta Política de Privacidade descreve como o aplicativo <strong>VigiaSoft Mobile</strong> (“App”)
+          coleta, utiliza e protege dados. O App é destinado ao controle operacional de segurança/portaria,
+          com recursos como autenticação, cadastro de visitantes e registro de entrada/saída.
+        </p>
+
+        <h2>1) Dados que podemos coletar</h2>
+        <ul>
+          <li><strong>Dados de autenticação:</strong> usuário e credenciais para login (processadas pela API do sistema).</li>
+          <li><strong>Dados de uso operacional:</strong> registros de entrada/saída, visitantes, ocorrências e informações relacionadas.</li>
+          <li><strong>Localização (quando habilitada):</strong> latitude/longitude para validar presença e registrar eventos quando necessário.</li>
+          <li><strong>Fotos (opcional):</strong> imagem vinculada ao cadastro do visitante, quando você seleciona/fornece uma foto.</li>
+          <li><strong>Dados técnicos:</strong> informações de diagnóstico e logs básicos para suporte e correções.</li>
+        </ul>
+
+        <h2>2) Como usamos os dados</h2>
+        <ul>
+          <li>Permitir login e manter a sessão do usuário.</li>
+          <li>Executar funcionalidades do sistema (cadastro, consulta e registros).</li>
+          <li>Sincronizar dados com o servidor quando houver internet (modo “offline-first”).</li>
+          <li>Melhorar estabilidade e investigar falhas/ANRs quando aplicável.</li>
+        </ul>
+
+        <h2>3) Armazenamento local e modo offline</h2>
+        <p>
+          O App pode armazenar dados localmente no dispositivo (ex.: banco local/SQLite) para funcionamento offline.
+          Quando a conexão estiver disponível, o App tenta sincronizar as alterações com o servidor.
+        </p>
+
+        <h2>4) Compartilhamento de dados</h2>
+        <p>
+          Os dados operacionais são enviados para a <strong>API do VigiaSoft</strong> para processamento e armazenamento
+          conforme o uso do sistema. Não vendemos dados pessoais.
+          Podemos compartilhar dados quando exigido por lei ou para proteger direitos e segurança do serviço.
+        </p>
+
+        <h2>5) Permissões do dispositivo</h2>
+        <ul>
+          <li><strong>Localização:</strong> para recursos de verificação/registro, quando habilitado.</li>
+          <li><strong>Câmera/arquivos:</strong> para selecionar/enviar foto de visitante, quando você optar.</li>
+          <li><strong>Internet:</strong> para comunicação com a API e sincronização.</li>
+        </ul>
+
+        <h2>6) Segurança</h2>
+        <p>
+          Adotamos medidas razoáveis para proteger os dados. Ainda assim, nenhum método de transmissão ou armazenamento
+          é 100% seguro.
+        </p>
+
+        <h2>7) Retenção e exclusão</h2>
+        <p>
+          Dados podem permanecer no dispositivo enquanto necessários ao funcionamento offline e no servidor conforme
+          as regras operacionais do sistema. Para solicitações de exclusão/retificação, use o contato abaixo.
+        </p>
+
+        <h2>8) Crianças</h2>
+        <p>
+          O App não é destinado a crianças menores de 13 anos e não tem como objetivo coletar dados de crianças.
+        </p>
+
+        <h2>9) Contato</h2>
+        <p>
+          Em caso de dúvidas, solicitação de informações ou questões sobre privacidade, entre em contato:
+          <br />
+          <strong>E-mail:</strong> <span>vigiasoft@gmail.com</span>
+        </p>
+
+        <h2>10) Alterações nesta política</h2>
+        <p>
+          Podemos atualizar esta política periodicamente. A data de “Última atualização” será ajustada quando houver mudanças.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      const d = new Date();
+      const pad = (n) => String(n).padStart(2, "0");
+      document.getElementById("date").textContent = `${pad(d.getDate())}/${pad(d.getMonth()+1)}/${d.getFullYear()}`;
+    </script>
+  </body>
+</html>
